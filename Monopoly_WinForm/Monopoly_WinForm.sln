@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monopoly_WinForm", "Monopoly_WinForm\Monopoly_WinForm.csproj", "{5C03C8C0-058F-41C9-A950-6EC0CECF171A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EEACFB4E-BDA8-4351-92FB-B080DF5C9DB6} = {EEACFB4E-BDA8-4351-92FB-B080DF5C9DB6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyData", "MonopolyData\MonopolyData.csproj", "{EEACFB4E-BDA8-4351-92FB-B080DF5C9DB6}"
 EndProject
