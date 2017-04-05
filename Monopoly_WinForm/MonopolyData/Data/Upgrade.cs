@@ -4,7 +4,8 @@ namespace MonopolyData.Data
 {
     public class Upgrade
     {
+        public int Id { get; set; }
         public int MonopolySalary { get; set; }
-        public List<Stock> Stocks { get; set; }
+        public ICollection<Stock> Stocks { get; set; }
     }
 }

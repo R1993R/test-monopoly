@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MonopolyData.Data;
 
 namespace Monopoly_WinForm
 {
@@ -15,6 +16,18 @@ namespace Monopoly_WinForm
         public Form1()
         {
             InitializeComponent();
+            using (var context = new MonopolyContext())
+            {
+                var user = new User()
+                {
+                    Argb = 124,
+                    Money = 5,
+                    Name = "weg",
+                    Position = 5
+                };
+                context.Users.Add(user);
+                context.SaveChanges();
+            }
         }
     }
 }
